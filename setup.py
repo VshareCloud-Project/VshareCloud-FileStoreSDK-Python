@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="vsharecloud-api",
-    version="0.0.2",
+    version="0.0.3",
     author="Yang",
     author_email="plectra-taproot0y@icloud.com",
     description="A simple API for vshareCloud",

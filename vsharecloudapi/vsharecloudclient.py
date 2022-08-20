@@ -62,7 +62,7 @@ class Client:
         ret = self._makerequest( url,data)
         if ret["status"] != True:
             raise Exception(json.dumps(ret))
-        return ret["data"]
+        return True
 
     def delfile(self,cid:str):
         """"""
@@ -70,7 +70,7 @@ class Client:
         ret = self._makerequest( url,{"cid":cid})
         if ret["status"] != True:
             raise Exception(json.dumps(ret))
-        return ret["data"]
+        return True
 
     @staticmethod
     def genkeys():
